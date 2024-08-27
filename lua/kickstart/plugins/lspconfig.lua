@@ -170,18 +170,18 @@ return {
         -- gopls = {},
         -- pyright = {},
         -- jdtls = {},
-        texlab = {
-          settings = {
-            texlab = {
-              auxDirectory = './aux/',
-              diagnostics = {
-                ignored = { 'undefined-reference' },
-              },
-            },
-          },
-        },
-        -- bashls = {},
-        rust_analyzer = {},
+        -- texlab = {
+        --   settings = {
+        --     texlab = {
+        --       auxDirectory = './aux/',
+        --       diagnostics = {
+        --         ignored = { 'undefined-reference' },
+        --       },
+        --     },
+        --   },
+        -- },
+        -- -- bashls = {},
+        -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -190,6 +190,7 @@ return {
         -- But for many setups, the LSP (`tsserver`) will work just fine
         -- tsserver = {},
         --
+        robotframework_ls = {},
 
         lua_ls = {
           -- cmd = {...},
