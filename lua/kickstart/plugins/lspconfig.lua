@@ -190,7 +190,19 @@ return {
         -- But for many setups, the LSP (`tsserver`) will work just fine
         -- tsserver = {},
         --
-        robotframework_ls = {},
+        -- This fucking works finally!!1
+        robotframework_ls = {
+          settings = {
+            robot = {
+              python = {
+                executable = 'C:/Projects/hubsales_automated_testing/.venv/Scripts/python.exe',
+              },
+              libraries = {
+                'SeleniumLibrary', -- Add any other libraries here
+              },
+            },
+          },
+        },
 
         lua_ls = {
           -- cmd = {...},
